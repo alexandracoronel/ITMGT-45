@@ -1,0 +1,116 @@
+{% include "navbar.html" %}
+<style>
+
+.div
+{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width:30%;
+}
+.one
+{
+   
+    float: left;  
+}
+.two
+{
+   
+    float: left;
+}
+.three
+{
+    
+    float: left;
+}
+.bg{
+    background-color: black;
+    color: white;
+    height: 20px;
+}
+.bg2{
+    background-color: lightgray;
+    color: black;
+    height: 20px;
+}
+.m1{
+    width: 200px;
+    height: 200px;
+}
+.m2{
+    width: 200px;
+    height: 200px;
+}
+
+</style>
+<div class="header-2">
+    <nav class="navbar" style="background-color: red; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 30px;">
+        <div style="color: white; padding-left: 115px;"><h4>Matchups</h4></style>
+    </nav>
+</div>
+<body>
+        <div class="one">
+            <img src="{{m1}}">
+        </div>
+        <div class="two">
+            <table class="table" style="max-height: max-content;">
+                <tbody>
+                    <tr>
+                      <td class="bg2">50%</td>
+                      <td class="bg">FG%</td>
+                      <td>46%</td>
+                    </tr>
+                    <tr>
+                        <td>80%</td>
+                        <td class="bg">FT%</td>
+                        <td class="bg2">88%</td>
+                    </tr>
+                    <tr>
+                        <td>80</td>
+                        <td class="bg">3PM</td>
+                        <td class="bg2">93</td>
+                    </tr>
+                    <tr>
+                        <td class="bg2">650</td>
+                        <td class="bg">PTS</td>
+                        <td>557</td>
+                    </tr>
+                    <tr>
+                        <td>180</td>
+                        <td class="bg"> AST</td>
+                        <td class="bg2">220</td>
+                    </tr>
+                    <tr>
+                        <td class="bg2">300</td>
+                        <td class="bg">REB</td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <td>35</td>
+                        <td class="bg">STL</td>
+                        <td class="bg2">40</td>
+                    </tr>
+                    <tr>
+                        <td class="bg2">30</td>
+                        <td class="bg">BLK</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>95</td>
+                        <td class="bg">TO</td>
+                        <td class="bg2">95</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="three">
+            <img src="{{m2}}">
+        </div>
+</body>
+</html>

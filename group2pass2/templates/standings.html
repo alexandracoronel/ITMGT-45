@@ -1,0 +1,33 @@
+{% include "navbar.html" %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!---Page Title -->
+<div class="header-1">
+    <nav class="navbar" style="background-color: red; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 30px;">
+        <div style="color: white; padding-left: 115px;"><h4>Standings</h4></style>
+    </nav>
+</div>
+
+<!---Chart of standings-->
+<div class="container-fluid">
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Team</th>
+                    <th>W-L-T</th>
+                    <th>GB</th>
+                    <tr>
+                        {% for branches in branch_list %} 
+                              <td>{{branches["rank"]}}</td>                       
+                              <td>{{branches["name"]}}</td>
+                              <td>{{branches["WLT"]}}</td>
+                              <td>{{branches["GB"]}}</td>
+                            </tr>
+                        {% endfor %}  
+                    </tr>          
+            </thead>
+        </table>
+    </div>
+</div>
